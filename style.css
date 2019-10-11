@@ -1,0 +1,165 @@
+#calco{
+    background: black;
+    border-radius: 15px;
+    width: 290px;
+    height: 460px;
+    text-align: center;
+    margin: auto auto;
+    margin-top: 75px;
+}
+#calco .title{
+    display: inline-block;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 16px;
+    float: left;
+}
+#calco .etat{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+    background: black;
+    margin-right: 16px;
+    float: right;
+}
+#calco #ecran{
+  /*background: #cddcb2;*/
+    background: darkgrey;
+    width:260px;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-family: 'Lohit Assamese';
+    height: 80px;
+    font-size: 20px !important;
+    text-align: right !important;
+    transition: all 2s ease-in;
+    box-shadow: none;
+    color: rgb(16,16,16);
+    opacity: 0.3;
+}
+#calco #ecran .result{
+    height: 50px;
+    outline: none;
+    text-align: right;
+}
+#calco #ecran .ecranOmbre{
+    position: absolute;
+    margin-top: -109px;
+    height: 82px;
+    width: 260px;
+    text-align: center;
+    transition: opacity 2s ease-in;
+    background: none;
+}
+#calco #ecran .ecranOmbre p{
+    font-size: 15px;
+    text-align: center;
+    font-family: Purisa;
+    margin-top: 15px;
+    color: transparent;
+    transition: color 2s ease-in-out;
+    font-weight: bolder;
+}
+#calco #ecran .ecranOmbre span{
+    font-size: 10px;
+    color: #444;
+    display: block;
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+    font-family: purisa;
+    margin-top: -10px;
+}
+#calco #ecran .functions{
+    padding-top: 3px;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: left;
+}
+#calco #ecran .functions .nde {
+    margin-left: 50px;
+    color: green;
+    font-weight: bolder;
+    transition: opacity 0.25s ease-in-out;
+    opacity: 0;
+}
+#calco #ecran .functions .error {
+    margin-left: 100px;
+    color: red;
+    font-weight: bolder;
+    transition: opacity 0.25s ease-in-out;
+    opacity: 0;
+}
+#calco .funcMathContain{
+    margin: 0 auto;
+    width: 280px;
+}
+#calco .functionsButtons{
+    text-align: left;
+    margin: 0 auto;
+    width: 280px;
+}
+#calco .functionsButtons .ONC{
+    font-size: 9px !important;
+    color: white;
+    font-size: 12px !important;
+    background: linear-gradient(to right,darkgreen,lime);
+    box-shadow: 1px 1px 2px white;
+}
+#calco .functionsButtons .OFF{
+    font-size: 9px !important;
+    color: white;
+    font-size: 12px !important;
+    background: linear-gradient(to right,darkred,red);
+    box-shadow: 1px 1px 2px white;
+}
+#calco .functionsButtons .secondF{
+    font-size: 9px !important;
+    color: white;
+    font-size: 12px !important;
+    background: linear-gradient(to right,darkorange,orange);
+    box-shadow: 1px 1px 2px white;
+}
+#calco .funcMath{
+    background: #444;
+    font-size: 12px;
+    color: white;
+    width: 40px;
+    height: 30px;
+    box-shadow: 2px 2px 2px white;
+}
+#calco .funcMath:hover{
+    background: white;
+    color: #444;
+    box-shadow: 2px 2px 2px black;
+}
+#calco .allTheRest{
+    width: 280px;
+    margin: 0 auto;
+}
+#calco input{
+    width: 40px;
+    height: 30px;
+    margin: 5px;
+    background: white;
+    color: black;
+    font-family: "Lohit Assamese";
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    box-shadow: 3px 3px 2px grey;
+}
+#calco input:hover{
+    border: 2px solid darkgrey;
+    box-shadow: none;
+}
+.animvoyant{
+    animation: voyant 0.5s 0.5s infinite backwards;
+}
+@keyframes  voyant{
+    0%{background: lime;}
+    0%{background:black;}
+}

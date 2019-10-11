@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+    <p>NB : vous pouvez allumé la calculatrice en  tapant start, et l'éteindre en tapant off</p>
+        <div id="calco">
+            <div style="padding-top: 7px"><span class="title">NaN P 5000</span><div class="etat"></div></div>
+            <div id="ecran"><p class="functions"><span class="nde">2nde</span><span class="error">error</span></p><p class="result" contenteditable="true" autofocus="true"></p>
+                <div class="ecranOmbre"><p>NaN p 5000</p><span></span></div>
+            </div>
+            <br>
+            <div class="functionsButtons">
+                <input type="button"  class="ONC" value="ON" onclick="on()">
+                <input type="button" class="Off" value="OFF" onclick="off()">
+                <input type="button"  class="secondF" value="2nde" onclick="setSecondF();">
+            </div>
+            <br>
+            <div class="funcMathContain">
+                <input type="button" class="funcMath" value="cos" onclick="val('cos(')">
+                <input type="button"  class="funcMath" value="sin" onclick="val('sin(')">
+                <input type="button"  class="funcMath" value="tan" onclick="val('tan(')">
+                <input type="button"  class="funcMath" value="("  onclick="val('(')">
+                <input type="button"  class="funcMath" value=")"  onclick="val(')')">
+                <input type="button"  class="funcMath" value="exp" onclick="val('exp(')">
+                <input type="button"  class="funcMath" value="log" onclick="val('log(')">
+                <input type="button"  class="funcMath" value="Pi" onclick="val('pi')">
+                <input type="button"  class="funcMath" value="X^2" onclick="carre()">
+                <input type="button"  class="funcMath" value="|a|" onclick="absolue();">
+            </div>
+            <br>
+            <div class="allTheRest">
+                <input type="button" value="7" onclick="val('7')">
+                <input type="button" value="8" onclick="val('8')">
+                <input type="button" value="9" onclick="val('9')">
+                <input type="button" value="+" onclick="val('+')">
+                <input type="button" value="CE" onclick="supp()">
+                <input type="button" value="4" onclick="val('4')">
+                <input type="button" value="5" onclick="val('5')">
+                <input type="button" value="6" onclick="val('6')">
+                <input type="button" value="/" onclick="val('/')">
+                <input type="button" value="v" onclick="val('v')">
+                <input type="button" value="1" onclick="val('1')">
+                <input type="button" value="2" onclick="val('2')">
+                <input type="button" value="3" onclick="val('3')">
+                <input type="button" value="-" onclick="val('-')">
+                <input type="button" value="e" onclick="val('e')">
+                <input type="button" value="0" onclick="val('0')">
+                <input type="button" value="." onclick="val('.')">
+                <input type="button" value="00" onclick="val('00')">
+                <input type="button" value="x" onclick="val('*')">
+                <input type="button" value="=" onclick="result(document.querySelector('#ecran .result').textContent);">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
